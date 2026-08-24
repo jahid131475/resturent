@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-gold-100: #fff5e6;
+  --color-gold-200: #fee2b3;
+  --color-gold-300: #fcc266;
+  --color-gold-400: #fb923c;
+  --color-gold-500: #f97316;
+  --color-gold-600: #ea580c;
+  --color-gold-700: #c2410c;
+  --color-bento-bg: #0c0c0c;
+  --color-bento-card: #141414;
+  --color-bento-surface: #1a1a1a;
+  --color-bento-border: #262626;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0a0a0b;
+  color: #f4f4f5;
+}
+
+.font-display {
+  font-family: var(--font-serif);
+}
+
+/* Bento card styling utilities */
+.bento-card {
+  background-color: #121214;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  border-color: rgba(249, 115, 22, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px -5px rgba(249, 115, 22, 0.1);
+}
+
+.bento-glow {
+  box-shadow: 0 0 40px -10px rgba(249, 115, 22, 0.15);
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}
+
+
